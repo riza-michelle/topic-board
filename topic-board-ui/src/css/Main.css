@@ -1,15 +1,15 @@
 html, body {
-	margin:0;
-	padding:0;
-	height:100%;
+  margin:0;
+  padding:0;
+  height:100%;
 }
 .app-container {
-	height: inherit;
+  height: inherit;
     align-items: center;
     justify-content: center;
 }
 .form-control {
-	background-image: none !important;
+  background-image: none !important;
 }
 #paginator {
   width: 2.5rem;
