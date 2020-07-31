@@ -1,0 +1,33 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.app-container {
+	height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+.form-control {
+	background-image: none !important;
+}
+#paginator {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  float:center;
+}
+#paginator:hover {
+  text-decoration: none;
+}
+#paginator:focus {
+  outline: none;
+}
+#paginator::after {
+  content: '\02C5';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2rem !important;
+  margin-left: 0.15rem;
+}

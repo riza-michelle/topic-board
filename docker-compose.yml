@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    database:
+        container_name: database
+        image: mongo
+        ports:
+            - "27017:27017"
+    ui:
+        build: ./topic-board-ui
+        container_name: topic_board_ui
+        stdin_open: true
+        ports: 
+            - 3000:3000
+        depends_on: 
+            - api
+    api:
+        build: ./topic-board-api
+        container_name: topic_board_api
+        ports:
+            - 5000:5000
+
+        depends_on:
+            - database
+        restart: always
